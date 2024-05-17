@@ -1,0 +1,7 @@
+# Build and Release Folders
+node_modules
+.vitepress/cache
+.DS_Store
+.vscode
+.py
+# dist

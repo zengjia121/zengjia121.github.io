@@ -1,0 +1,32 @@
+/** @format */
+
+@import "./rainbow.scss";
+@import "./vars.scss";
+@import "./vitepress.scss";
+@import "./medium-zoom.scss";
+@import "./tailwind.scss";
+
+.m-home-layout .image-src:hover {
+  transform: translate(-50%, -50%) rotate(666turn);
+  transition: transform 59s 1s cubic-bezier(0.3, 0, 0.8, 1);
+}
+
+.m-home-layout .image-src {
+  background-position: center; // 让背景图像居中
+  background-size: cover; // 让背景图像完全覆盖元素，超出的部分会被裁剪掉
+  border-radius: 50%; // 设置边框半径为50%，使元素为圆形
+  overflow: hidden; // 隐藏超出元素的部分
+}
+.m-home-layout {
+  // background-color: #e8f8fa;
+  background: linear-gradient(to bottom, #e8f8fa, #ffffff);
+}
+.m-home-layout .details small {
+  opacity: 0.8;
+}
+
+.m-home-layout .bottom-small {
+  display: block;
+  margin-top: 2em;
+  text-align: right;
+}

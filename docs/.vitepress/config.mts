@@ -55,7 +55,7 @@ export default defineConfig({
       options: {
         appId: "27XTJSINHO",
         apiKey: "3a0677c4909fe44f1843f338aabddac7",
-        indexName: "ZJBlog_tmp",
+        indexName: "ZJBlog",
         placeholder: "请输入关键词",
       },
     },

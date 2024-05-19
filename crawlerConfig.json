@@ -1,5 +1,5 @@
 {
-  "index_name": "ZJBlog",
+  "index_name": "ZJBlog_tmp",
   "start_urls": ["https://zengjia121.github.io/"],
   "rateLimit": 8,
   "maxDepth": 10,

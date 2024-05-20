@@ -15,10 +15,14 @@
     "lvl5": ".content h5",
     "content": ".content p, .content li",
     "lang": {
-      "selector": "",
-      "defaultValue": "zh-cn"
+      "selector": "/html/@lang",
+      "type": "xpath",
+      "global": true
     }
   },
   "selectors_exclude": ["aside", ".page-footer", ".next-and-prev-link", ".table-of-contents"],
+  "custom_settings": {
+    "attributesForFaceting": ["lang", "tags"]
+  },
   "js_render": true
 }

@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Use Node.js 20
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
       - name: Get the content of algolia.json as config
         id: algolia_config
         run: echo "config=$(cat crawlerConfig.json | jq -r tostring)" >> $GITHUB_OUTPUT

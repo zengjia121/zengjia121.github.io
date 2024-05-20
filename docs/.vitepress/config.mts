@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 import { head, nav, sidebar } from "./configs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  lang: "zh-cn",
+  lang: "zh-CN",
   title: "RoastDuck",
   description: "A VitePress Site",
   head,

@@ -28,7 +28,7 @@ date: 2024-03-24 16:51:40
   - [示例 2：](#示例-2)
   - [示例 3：](#示例-3)
   - [奇怪的知识点](#奇怪的知识点)
-  - [参考](#参考)
+- [参考](#参考)
 
 ## JavaScript 的特点 -- 单线程
 
@@ -279,8 +279,10 @@ for (let i = 0; i < 10; i++) {
 
 - Promise 对象本身并不是宏任务或微任务，但它的 .then() 或 .catch() 方法中的回调函数会被添加到微任务队列中，等待当前宏任务完成后立即执行。
 
-## 参考
+# 参考
 
-> <https://blog.csdn.net/qq_63534905/article/details/127789918>  
-> <https://zhuanlan.zhihu.com/p/580956436>  
-> <https://vue3js.cn/interview/JavaScript/event_loop.html>
+::: tip 参考链接
+<https://blog.csdn.net/qq_63534905/article/details/127789918>  
+<https://zhuanlan.zhihu.com/p/580956436>  
+<https://vue3js.cn/interview/JavaScript/event_loop.html>
+:::

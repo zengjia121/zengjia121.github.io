@@ -17,9 +17,8 @@ hero:
       link: /project/KG/KG-1.html
       theme: alt
     - text: 鸭鸭农场
-      link: /api-examples
+      link: /nav.html
     - text: 未知地带
-      link: /api-examples
       theme: alt
 
 features:
@@ -41,6 +40,10 @@ features:
   - icon: 🦆
     title: 鸭鸭工具箱
     details: 没有一只鸭子可以成功地走出南京
+    link: /nav.html
+    linkText: 鸭鸭百宝箱
 ---
+
+<!-- @format -->
 
 <!-- @format -->

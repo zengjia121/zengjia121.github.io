@@ -14,22 +14,21 @@ date: 2024-03-24 16:51:40
 
 # JavaScript 的事件循环机制与宏任务和微任务
 
-- [JavaScript 的事件循环机制与宏任务和微任务](#javascript的事件循环机制与宏任务和微任务)
-  - [JavaScript 的特点 -- 单线程](#javascript的特点----单线程)
-  - [JS 如何解决单线程阻塞问题 -- 同步任务与异步任务](#js如何解决单线程阻塞问题----同步任务与异步任务)
+- [JavaScript 的事件循环机制与宏任务和微任务](#javascript-的事件循环机制与宏任务和微任务)
+  - [JavaScript 的特点 -- 单线程](#javascript-的特点----单线程)
+  - [JS 如何解决单线程阻塞问题 -- 同步任务与异步任务](#js-如何解决单线程阻塞问题----同步任务与异步任务)
   - [宏任务与微任务](#宏任务与微任务)
   - [宏任务微任务执行顺序 -- 先同步再异步，异步中先微任务，再宏任务](#宏任务微任务执行顺序----先同步再异步异步中先微任务再宏任务)
-  - [async 与 await](#async与await)
-    - [async](#async)
-    - [await](#await)
-  - [Promise 对象](#promise对象)
+  - [async 与 await](#async-与-await)
+  - [async](#async)
+  - [await](#await)
+  - [Promise 对象](#promise-对象)
   - [一些示例题目](#一些示例题目)
-    - [示例 1：](#示例1)
-    - [示例 2：](#示例2)
-    - [示例 3：](#示例3)
+  - [示例 1：](#示例-1)
+  - [示例 2：](#示例-2)
+  - [示例 3：](#示例-3)
   - [奇怪的知识点](#奇怪的知识点)
   - [参考](#参考)
-  <!--more-->
 
 ## JavaScript 的特点 -- 单线程
 
@@ -284,4 +283,4 @@ for (let i = 0; i < 10; i++) {
 
 <https://blog.csdn.net/qq_63534905/article/details/127789918>
 <https://zhuanlan.zhihu.com/p/580956436>  
- <https://vue3js.cn/interview/JavaScript/event_loop.html>
+<https://vue3js.cn/interview/JavaScript/event_loop.html>

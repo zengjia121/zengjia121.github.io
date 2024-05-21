@@ -281,6 +281,6 @@ for (let i = 0; i < 10; i++) {
 
 ## 参考
 
-<https://blog.csdn.net/qq_63534905/article/details/127789918>
-<https://zhuanlan.zhihu.com/p/580956436>  
-<https://vue3js.cn/interview/JavaScript/event_loop.html>
+> <https://blog.csdn.net/qq_63534905/article/details/127789918>  
+> <https://zhuanlan.zhihu.com/p/580956436>  
+> <https://vue3js.cn/interview/JavaScript/event_loop.html>

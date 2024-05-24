@@ -49,7 +49,6 @@ export default defineConfig({
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
 
-    // /*** 自定义配置 ***/
     search: {
       provider: "algolia",
       options: {
@@ -59,10 +58,5 @@ export default defineConfig({
         placeholder: "请输入关键词",
       },
     },
-    // algolia: {
-    //   apiKey: "3a0677c4909fe44f1843f338aabddac7",
-    //   indexName: "ZJBlog",
-    //   appId: "27XTJSINHO",
-    // },
   },
 });

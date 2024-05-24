@@ -81,8 +81,11 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
         />
       </div>
     </template>
-    <template #doc-after>
-      <MDocFooter />
+    <template #doc-footer-before>
+      <ContentFooter />
+    </template>
+    <template #sidebar-nav-after>
+      <cloudMusic />
     </template>
   </Layout>
 </template>

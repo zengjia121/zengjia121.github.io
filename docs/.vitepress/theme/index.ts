@@ -9,6 +9,7 @@ import { createMediumZoomProvider } from "./composables/useMediumZoom";
 import MLayout from "./components/MLayout.vue";
 import MNavLinks from "./components/MNavLinks.vue";
 import cloudMusic from "./components/cloudMusic.vue";
+import ContentFooter from "./components/ContentFooter.vue";
 
 import "./styles/index.scss";
 
@@ -35,6 +36,8 @@ export default {
 
     app.component("MNavLinks", MNavLinks);
     app.component("cloudMusic", cloudMusic);
+    app.component("ContentFooter", ContentFooter);
+
     if (typeof window !== "undefined") {
       watch(
         () => router.route.data.relativePath,

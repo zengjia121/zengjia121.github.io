@@ -17,6 +17,7 @@ const preferredOrder = [
   "Git",
   "KG",
   "Blog",
+  "echarts",
   "算法",
   "设计模式",
   "Leetcode",

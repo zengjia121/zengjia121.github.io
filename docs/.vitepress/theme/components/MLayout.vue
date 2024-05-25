@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress"
 import DefaultTheme from "vitepress/theme"
-import { nextTick, provide } from "vue"
+import { nextTick, provide, inject, watch } from "vue"
 import Giscus from "@giscus/vue"
 
 import { usePageId } from "../composables"
@@ -12,7 +12,6 @@ import MDocFooter from "./MDocFooter.vue"
 const { Layout } = DefaultTheme
 const { isDark, theme, frontmatter } = useData()
 const pageId = usePageId()
-
 const { comment } = theme.value
 
 const enableTransitions = () =>
@@ -102,3 +101,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   padding-top: 24px;
 }
 </style>
+
+function inject(arg0: string) {
+  throw new Error('Function not implemented.')
+}

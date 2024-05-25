@@ -1,52 +1,67 @@
 {
-  "hash": "763325b9",
+  "hash": "e505219d",
   "configHash": "f8d5484b",
-  "lockfileHash": "d1558301",
-  "browserHash": "c09383fd",
+  "lockfileHash": "e6b1ddd4",
+  "browserHash": "ad5ca2ed",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "d474f65d",
+      "fileHash": "181f8474",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "59e41755",
+      "fileHash": "3d6e634c",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "757077b8",
+      "fileHash": "2623cbc8",
       "needsInterop": false
+    },
+    "lottie-web": {
+      "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
+      "file": "lottie-web.js",
+      "fileHash": "ca026d51",
+      "needsInterop": true
     },
     "@mdit-vue/shared": {
       "src": "../../../../node_modules/@mdit-vue/shared/dist/index.mjs",
       "file": "@mdit-vue_shared.js",
-      "fileHash": "a6907d89",
+      "fileHash": "bdb1fd6f",
       "needsInterop": false
     },
     "@giscus/vue": {
       "src": "../../../../node_modules/@giscus/vue/dist/index.js",
       "file": "@giscus_vue.js",
-      "fileHash": "43b23894",
+      "fileHash": "853cb7a0",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "8bd52a80",
+      "fileHash": "e7c26f69",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "file": "vue-router.js",
+      "fileHash": "58dae704",
       "needsInterop": false
     }
   },
   "chunks": {
+    "giscus-BNK3dBIH-2QA577VX": {
+      "file": "giscus-BNK3dBIH-2QA577VX.js"
+    },
     "chunk-RY5ODQAQ": {
       "file": "chunk-RY5ODQAQ.js"
     },
-    "giscus-BNK3dBIH-YISHHA3T": {
-      "file": "giscus-BNK3dBIH-YISHHA3T.js"
+    "chunk-Y2F7D3TJ": {
+      "file": "chunk-Y2F7D3TJ.js"
     }
   }
 }

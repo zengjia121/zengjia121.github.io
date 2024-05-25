@@ -1,6 +1,6 @@
 /** @format */
 
-import { h, watch } from "vue";
+import { h, watch, nextTick, ref } from "vue";
 import { useData, EnhanceAppContext } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 
@@ -10,7 +10,6 @@ import MLayout from "./components/MLayout.vue";
 import MNavLinks from "./components/MNavLinks.vue";
 import cloudMusic from "./components/cloudMusic.vue";
 import ContentFooter from "./components/ContentFooter.vue";
-
 import "./styles/index.scss";
 
 let homePageStyle: HTMLStyleElement | undefined;
@@ -33,12 +32,16 @@ export default {
     createMediumZoomProvider(app, router);
 
     app.provide("DEV", process.env.NODE_ENV === "development");
-
     app.component("MNavLinks", MNavLinks);
     app.component("cloudMusic", cloudMusic);
     app.component("ContentFooter", ContentFooter);
 
+    const currentUrl = ref(null);
     if (typeof window !== "undefined") {
+      router.onBeforeRouteChange = async (to) => {
+        currentUrl.value = to;
+      };
+      app.provide("currentUrl", currentUrl);
       watch(
         () => router.route.data.relativePath,
         () =>

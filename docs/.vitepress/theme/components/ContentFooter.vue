@@ -26,19 +26,16 @@
 </template>
 
 <script>
-import { inject, watch } from "vue"
+import { inject, watch, ref } from "vue"
 export default {
   name: "FooterContent",
   setup() {
     const currentUrl = inject("currentUrl")
-    watch(currentUrl, (newValue, oldValue) => {
-      console.log("currentUrl", oldValue, "to", newValue)
-    })
-    let isCopy = "点击复制"
+    let isCopy = ref("点击复制")
     async function copyToClipboard(event) {
-      await navigator.clipboard.writeText(state.currentUrl)
-      state.isCopy = "复制成功"
-      setTimeout(() => (state.isCopy = "点击复制"), 2000) // 动画的持续时间是 2 秒
+      await navigator.clipboard.writeText(currentUrl.value)
+      isCopy.value = "复制成功"
+      setTimeout(() => (isCopy.value = "点击复制"), 2000) // 持续时间 2 秒
     }
 
     return { currentUrl, isCopy, copyToClipboard }

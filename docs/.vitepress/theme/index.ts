@@ -38,8 +38,8 @@ export default {
 
     const currentUrl = ref(null);
     if (typeof window !== "undefined") {
-      router.onBeforeRouteChange = async (to) => {
-        currentUrl.value = to;
+      router.onBeforeRouteChange = (to) => {
+        currentUrl.value = window.location.origin + "/" + to.split("/").slice(-3).join("/");
       };
       app.provide("currentUrl", currentUrl);
       watch(

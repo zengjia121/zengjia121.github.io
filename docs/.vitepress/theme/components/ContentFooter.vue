@@ -1,8 +1,6 @@
 <template>
   <div class="divider"></div>
   <div class="footer-content">
-    <!-- 在这里添加你想在每篇文章末尾显示的内容 -->
-    <!-- <p>每篇文章末尾显示的内容</p> -->
     <div class="Content">
       <strong class="rainbow">作者：</strong><span>RoastDuck</span>
     </div>

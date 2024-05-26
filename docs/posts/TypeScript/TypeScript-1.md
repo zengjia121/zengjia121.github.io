@@ -16,14 +16,12 @@ categories:
 
 写在前面：使用 Vue3 后写 ts 比写 js 的时候更多，但是发现每次写 ts 的时候还是采用 js 的方法，虽然知道一点它们的区别，但没有系统的总结过，面试的时候答的也是模模糊糊的，所以还是得总结一下
 
-- [TypeScript 与 JavaScript 的区别](#typescript与javascript的区别)
-  - [什么是 TypeScript](#什么是typescript)
-    - [静态类型语言与动态类型语言](#静态类型语言与动态类型语言)
-  - [TypeScript 与 JavaScript 的区别](#typescript与javascript的区别-1)
-  - [TypeScript 的特性](#typescript的特性)
+- [TypeScript 与 JavaScript 的区别](#typescript-与-javascript-的区别)
+  - [什么是 TypeScript](#什么是-typescript)
+  - [静态类型语言与动态类型语言](#静态类型语言与动态类型语言)
+  - [TypeScript 与 JavaScript 的区别](#typescript-与-javascript-的区别-1)
+  - [TypeScript 的特性](#typescript-的特性)
   - [总结](#总结)
-  - [参考](#参考)
-  <!--more-->
 
 ## 什么是 TypeScript
 
@@ -190,8 +188,9 @@ let output = identity<string>('GitHub Copilot');
 
 哥们梦回 C#了，问就是前端后端化，后端前端化
 
-## 参考
+:::tip 参考
 
-<https://vue3js.cn/interview/typescript/typescript_javascript.html>
-<https://blog.csdn.net/weixin_42560424/article/details/131912721>
-<https://www.cnblogs.com/coderzjz/p/14235494.html>
+<https://vue3js.cn/interview/typescript/typescript_javascript.html>  
+<https://blog.csdn.net/weixin_42560424/article/details/131912721>  
+<https://www.cnblogs.com/coderzjz/p/14235494.html>  
+:::

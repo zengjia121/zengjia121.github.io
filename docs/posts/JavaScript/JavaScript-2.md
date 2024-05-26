@@ -27,7 +27,6 @@ date: 2024-03-29 22:26:25
   - [indexedDB](#indexeddb)
     - [使用](#使用-3)
   - [各缓存方式应用场景](#各缓存方式应用场景)
-  - [参考](#参考)
 
 <!--more-->
 
@@ -221,7 +220,7 @@ console.log(data.name); // 输出 "John"
 3. 敏感账号一次性登录，推荐使用 sessionStorage
 4. 存储大量数据的情况、在线文档（富文本编辑器）保存编辑历史的情况，推荐使用 indexedDB
 
-## 参考
-
+:::tip 参考
 <https://mp.weixin.qq.com/s/mROjtpoXarN--UDfEMqwhQ>
 <https://github.com/chenstarx/GoDB.js>
+:::

@@ -19,7 +19,6 @@ date: 2024-03-26 22:16:59
   - [echarts-extension-amap 插件使用](#echarts-extension-amap-插件使用)
   - [echarts Option 设置](#echarts-option-设置)
   - [高德控件的加入](#高德控件的加入)
-  - [参考](#参考)
 
 ## echarts-extension-amap 插件使用
 
@@ -73,6 +72,6 @@ amap.addControl(new AMap.ToolBar());
 amapComponent.setEChartsLayerInteractive(false);
 ```
 
-## 参考
-
+:::tip 参考
 <https://github.com/plainheart/echarts-extension-amap/blob/master/README.zh-CN.md>
+:::

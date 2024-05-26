@@ -22,7 +22,6 @@ categories:
   - [TCP 与 UDP 区别](#tcp-与-udp-区别)
     - [具体描述：](#具体描述)
     - [使用场景](#使用场景)
-  - [参考](#参考)
 
 <!--more-->
 
@@ -94,8 +93,8 @@ categories:
 
   - **简单查询**：例如 DNS 查询，它只需要发送一小部分数据，并且不需要建立连接。
 
-## 参考
-
-<https://zh.wikipedia.org>
-<https://blog.csdn.net/Li_Ning_/article/details/52117463>
-<https://vue3js.cn/interview/http/UDP_TCP.html>
+:::tip 参考
+<https://zh.wikipedia.org>  
+<https://blog.csdn.net/Li_Ning_/article/details/52117463>  
+<https://vue3js.cn/interview/http/UDP_TCP.html>  
+:::

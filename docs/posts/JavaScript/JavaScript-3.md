@@ -1,5 +1,5 @@
 ---
-title: JavaScript原型与原型链
+title: 原型与原型链
 tags:
   - 面试
   - JavaScript

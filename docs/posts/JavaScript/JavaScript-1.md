@@ -1,5 +1,5 @@
 ---
-title: JavaScript的事件循环机制
+title: 事件循环机制
 tags:
   - 面试
   - JavaScript

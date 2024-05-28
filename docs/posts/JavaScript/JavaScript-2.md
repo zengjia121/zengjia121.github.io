@@ -1,5 +1,5 @@
 ---
-title: Javascript本地存储的方式
+title: 本地存储的方式
 tags:
   - 面试
   - JavaScript

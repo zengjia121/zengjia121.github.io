@@ -10,9 +10,11 @@ date: 2024-5-29 10:54:05
 
 <!-- @format -->
 
-# V8 模式
+# JavaScript 的 ACM 模式
 
-## 读取数据
+## V8 模式
+
+### 读取数据
 
 好像有两种，但具体用`readline();`的比较多...吧？
 
@@ -21,13 +23,13 @@ read_line();
 readline();
 ```
 
-## 输出
+### 输出
 
 ```js
 console.log();
 ```
 
-# Nodejs 模式
+## Nodejs 模式
 
 输入有三大步骤：
 

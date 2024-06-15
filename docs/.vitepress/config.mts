@@ -8,6 +8,7 @@ export default defineConfig({
   title: "RoastDuck",
   description: "A VitePress Site",
   head,
+
   /* 主题配置 */
   themeConfig: {
     i18nRouting: false,
@@ -49,6 +50,10 @@ export default defineConfig({
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
 
+    /*** 自定义配置 ***/
+    visitor: {
+      badgeId: "zzzj.blog",
+    },
     search: {
       provider: "algolia",
       options: {

@@ -20,24 +20,43 @@
       >
       协议进行授权。转载请注明出处
     </div>
+    <div
+      v-if="!DEV && visitor && isDocFooterVisible"
+      v-show="hasSidebar"
+      class="m-doc-footer"
+    >
+      <strong class="rainbow">本页面访客：</strong>
+      <img
+        class="visitor"
+        :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}
+          &left_text=Hello%20Hello`"
+        onerror="this.style.display='none'"
+      />
+    </div>
   </div>
 </template>
 
-<script>
-import { inject, watch, ref } from "vue"
-export default {
-  name: "FooterContent",
-  setup() {
-    const currentUrl = inject("currentUrl")
-    let isCopy = ref("点击复制")
-    async function copyToClipboard(event) {
-      await navigator.clipboard.writeText(currentUrl.value)
-      isCopy.value = "复制成功"
-      setTimeout(() => (isCopy.value = "点击复制"), 2000) // 持续时间 2 秒
-    }
+<script  setup lang="ts">
+import { inject, computed, Ref, ref } from "vue"
+import { useData } from "vitepress"
+import { useSidebar } from "vitepress/theme"
+import { usePageId } from "../composables"
 
-    return { currentUrl, isCopy, copyToClipboard }
-  },
+const DEV = inject<Ref<boolean>>("DEV")
+const { theme } = useData()
+const { footer, visitor } = theme.value
+const { hasSidebar } = useSidebar()
+const pageId = usePageId()
+const isDocFooterVisible = computed(() => {
+  return !DEV || footer.message || footer.copyright || visitor.badgeId
+})
+
+const currentUrl = inject("currentUrl")
+let isCopy = ref("点击复制")
+async function copyToClipboard(event) {
+  await navigator.clipboard.writeText(currentUrl.value)
+  isCopy.value = "复制成功"
+  setTimeout(() => (isCopy.value = "点击复制"), 2000) // 持续时间 2 秒
 }
 </script>
 
@@ -58,10 +77,22 @@ export default {
 .footer-content .Content {
   margin-bottom: 10px;
 }
-.Content .rainbow {
+.m-doc-footer {
+  display: flex;
+  align-items: center;
+}
+.rainbow {
   color: var(--vp-c-brand-1);
 }
 .Cursor {
   cursor: pointer;
+}
+.visitor {
+  margin-right: 8px;
+}
+@media (max-width: 414px) {
+  .visitor {
+    display: none;
+  }
 }
 </style>

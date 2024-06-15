@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { inject, Ref, computed } from 'vue'
-import { useData } from 'vitepress'
-import { useSidebar } from 'vitepress/theme'
+import { inject, Ref, computed } from "vue"
+import { useData } from "vitepress"
+import { useSidebar } from "vitepress/theme"
 
-import { usePageId } from '../composables'
+import { usePageId } from "../composables"
 
-const DEV = inject<Ref<boolean>>('DEV')
+const DEV = inject<Ref<boolean>>("DEV")
 const { theme } = useData()
 const { footer, visitor } = theme.value
 
 const { hasSidebar } = useSidebar()
 const pageId = usePageId()
+console.log("🚀 ~ pageId:", pageId)
 
 const isDocFooterVisible = computed(() => {
   return !DEV || footer.message || footer.copyright || visitor.badgeId
@@ -21,17 +22,13 @@ const isDocFooterVisible = computed(() => {
   <div v-if="isDocFooterVisible" v-show="hasSidebar" class="m-doc-footer">
     <div class="m-doc-footer-message">
       <img
-        v-if="!DEV && visitor"
+        v-if="DEV && visitor"
         class="visitor"
         :src="`https://visitor-badge.laobi.icu/badge?page_id=${visitor.badgeId}.${pageId}`"
         title="当前页面累计访问数"
         onerror="this.style.display='none'"
       />
-      <p v-if="footer?.message">{{ footer.message }}</p>
     </div>
-    <p class="m-doc-footer-copyright" v-if="footer?.copyright">
-      {{ footer.copyright }}
-    </p>
   </div>
 </template>
 

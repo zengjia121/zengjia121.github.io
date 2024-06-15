@@ -10,6 +10,8 @@ import MLayout from "./components/MLayout.vue";
 import MNavLinks from "./components/MNavLinks.vue";
 import cloudMusic from "./components/cloudMusic.vue";
 import ContentFooter from "./components/ContentFooter.vue";
+import NavVisitor from "./components/NavVisitor.vue";
+import MDocFooter from "./components/MDocFooter.vue";
 import "./styles/index.scss";
 
 let homePageStyle: HTMLStyleElement | undefined;
@@ -35,6 +37,8 @@ export default {
     app.component("MNavLinks", MNavLinks);
     app.component("cloudMusic", cloudMusic);
     app.component("ContentFooter", ContentFooter);
+    app.component("NavVisitor", NavVisitor);
+    app.component("MDocFooter", MDocFooter);
 
     const currentUrl = ref(null);
     if (typeof window !== "undefined") {

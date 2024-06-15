@@ -57,7 +57,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/Layout.vue
     -->
     <template #nav-bar-title-after>
-      <MNavVisitor />
+      <NavVisitor />
     </template>
 
     <template

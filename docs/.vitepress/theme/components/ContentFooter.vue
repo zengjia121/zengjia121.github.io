@@ -47,10 +47,10 @@ const { theme } = useData()
 const { footer, visitor } = theme.value
 const { hasSidebar } = useSidebar()
 const pageId = usePageId()
+console.log("🚀 ~ pageId:", pageId)
 const isDocFooterVisible = computed(() => {
   return !DEV || footer.message || footer.copyright || visitor.badgeId
 })
-
 const currentUrl = inject("currentUrl")
 let isCopy = ref("点击复制")
 async function copyToClipboard(event) {
@@ -92,6 +92,9 @@ async function copyToClipboard(event) {
 }
 @media (max-width: 414px) {
   .visitor {
+    display: none;
+  }
+  .m-doc-footer {
     display: none;
   }
 }

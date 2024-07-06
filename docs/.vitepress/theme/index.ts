@@ -12,6 +12,7 @@ import cloudMusic from "./components/cloudMusic.vue";
 import ContentFooter from "./components/ContentFooter.vue";
 import NavVisitor from "./components/NavVisitor.vue";
 import MDocFooter from "./components/MDocFooter.vue";
+import FooterComment from "./components/FooterComment.vue";
 import "./styles/index.scss";
 
 let homePageStyle: HTMLStyleElement | undefined;
@@ -39,6 +40,7 @@ export default {
     app.component("ContentFooter", ContentFooter);
     app.component("NavVisitor", NavVisitor);
     app.component("MDocFooter", MDocFooter);
+    app.component("FooterComment", FooterComment);
 
     const currentUrl = ref(null);
     if (typeof window !== "undefined") {

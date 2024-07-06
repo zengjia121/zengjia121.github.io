@@ -1,64 +1,58 @@
 {
-  "hash": "e505219d",
+  "hash": "e36333d8",
   "configHash": "f8d5484b",
-  "lockfileHash": "e6b1ddd4",
-  "browserHash": "ad5ca2ed",
+  "lockfileHash": "c5f08bc7",
+  "browserHash": "16e8ca91",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "181f8474",
+      "fileHash": "c5ddeca2",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "3d6e634c",
+      "fileHash": "fb8cb1c8",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "2623cbc8",
+      "fileHash": "ac12a4ec",
       "needsInterop": false
-    },
-    "lottie-web": {
-      "src": "../../../../node_modules/lottie-web/build/player/lottie.js",
-      "file": "lottie-web.js",
-      "fileHash": "ca026d51",
-      "needsInterop": true
     },
     "@mdit-vue/shared": {
       "src": "../../../../node_modules/@mdit-vue/shared/dist/index.mjs",
       "file": "@mdit-vue_shared.js",
-      "fileHash": "bdb1fd6f",
+      "fileHash": "fc7d1c6d",
       "needsInterop": false
+    },
+    "valine": {
+      "src": "../../../../node_modules/valine/dist/Valine.min.js",
+      "file": "valine.js",
+      "fileHash": "2a42fd04",
+      "needsInterop": true
     },
     "@giscus/vue": {
       "src": "../../../../node_modules/@giscus/vue/dist/index.js",
       "file": "@giscus_vue.js",
-      "fileHash": "853cb7a0",
+      "fileHash": "973d7229",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "e7c26f69",
-      "needsInterop": false
-    },
-    "vue-router": {
-      "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
-      "file": "vue-router.js",
-      "fileHash": "58dae704",
+      "fileHash": "d4527d23",
       "needsInterop": false
     }
   },
   "chunks": {
-    "giscus-BNK3dBIH-2QA577VX": {
-      "file": "giscus-BNK3dBIH-2QA577VX.js"
-    },
     "chunk-RY5ODQAQ": {
       "file": "chunk-RY5ODQAQ.js"
+    },
+    "giscus-BNK3dBIH-2QA577VX": {
+      "file": "giscus-BNK3dBIH-2QA577VX.js"
     },
     "chunk-Y2F7D3TJ": {
       "file": "chunk-Y2F7D3TJ.js"

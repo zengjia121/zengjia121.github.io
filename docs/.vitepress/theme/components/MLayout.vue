@@ -2,12 +2,13 @@
 import { useData } from "vitepress"
 import DefaultTheme from "vitepress/theme"
 import { nextTick, provide, inject, watch } from "vue"
-import Giscus from "@giscus/vue"
+// import Giscus from "@giscus/vue"
 
 import { usePageId } from "../composables"
 
-import MNavVisitor from "./MNavVisitor.vue"
-import MDocFooter from "./MDocFooter.vue"
+// import MNavVisitor from "./MNavVisitor.vue"
+// import MDocFooter from "./MDocFooter.vue"
+import FooterComment from "./FooterComment.vue"
 
 const { Layout } = DefaultTheme
 const { isDark, theme, frontmatter } = useData()
@@ -83,6 +84,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #doc-footer-before>
       <ContentFooter />
     </template>
+    <template #doc-after> <FooterComment /></template>
     <template #sidebar-nav-after>
       <cloudMusic />
     </template>

@@ -14,7 +14,7 @@ onMounted(() => {
     appKey: "NIzvVdueG6ekaX3mFpq3Y8r8",
     placeholder: "说点什么吧...",
     avatar: "hide",
-    path: window.location.pathname,
+    // path: window.location.pathname,
     visitor: true,
     recordIP: true,
   })

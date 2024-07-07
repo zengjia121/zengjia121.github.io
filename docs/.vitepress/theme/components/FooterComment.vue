@@ -35,6 +35,6 @@ onMounted(async () => {
 
 <style lang='scss' scoped>
 #vcomments {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 </style>

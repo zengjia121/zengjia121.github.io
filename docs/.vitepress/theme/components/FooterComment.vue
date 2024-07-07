@@ -6,7 +6,11 @@
 <script setup lang='ts'>
 import { onMounted } from "vue"
 import Valine from "valine"
-import path from "path"
+import { useData } from "vitepress"
+import { usePageId } from "../composables"
+const { theme } = useData()
+const pageId = usePageId()
+const { visitor } = theme.value
 onMounted(() => {
   new Valine({
     el: "#vcomments",
@@ -14,7 +18,7 @@ onMounted(() => {
     appKey: "NIzvVdueG6ekaX3mFpq3Y8r8",
     placeholder: "说点什么吧...",
     avatar: "hide",
-    // path: window.location.pathname,
+    path: visitor.badgeId ? `${visitor.badgeId}.${pageId}` : pageId,
     visitor: true,
     recordIP: true,
   })

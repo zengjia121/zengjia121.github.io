@@ -15,13 +15,16 @@ onMounted(async () => {
     return
   }
   const Valine = await (await import("valine")).default
+  const path = visitor.badgeId
+    ? `${visitor.badgeId}.${pageId.value}`
+    : pageId.value
   new Valine({
     el: "#vcomments",
     appId: "fCdfcJuzbLAvebzaHbh0Atfx-gzGzoHsz",
     appKey: "NIzvVdueG6ekaX3mFpq3Y8r8",
     placeholder: "说点什么吧...",
     avatar: "hide",
-    path: window.location.pathname,
+    path: path,
     visitor: true,
     recordIP: true,
     meta: ["nick"],

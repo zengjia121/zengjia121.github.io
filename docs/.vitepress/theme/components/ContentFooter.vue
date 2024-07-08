@@ -47,7 +47,7 @@ const { theme } = useData()
 const { footer, visitor } = theme.value
 const { hasSidebar } = useSidebar()
 const pageId = usePageId()
-console.log("🚀 ~ pageId:", pageId)
+// console.log("🚀 ~ pageId:", pageId)
 const isDocFooterVisible = computed(() => {
   return !DEV || footer.message || footer.copyright || visitor.badgeId
 })

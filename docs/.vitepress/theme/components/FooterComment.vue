@@ -21,7 +21,7 @@ onMounted(async () => {
     appKey: "NIzvVdueG6ekaX3mFpq3Y8r8",
     placeholder: "说点什么吧...",
     avatar: "hide",
-    path: visitor.badgeId ? `${visitor.badgeId}.${pageId}` : pageId,
+    path: window.location.pathname,
     visitor: true,
     recordIP: true,
     meta: ["nick"],

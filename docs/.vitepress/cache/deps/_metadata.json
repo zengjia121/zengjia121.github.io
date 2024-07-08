@@ -1,58 +1,49 @@
 {
-  "hash": "e36333d8",
+  "hash": "04b17fb7",
   "configHash": "f8d5484b",
-  "lockfileHash": "c5f08bc7",
-  "browserHash": "16e8ca91",
+  "lockfileHash": "dc390f6c",
+  "browserHash": "28500c7e",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "c5ddeca2",
+      "fileHash": "6bf20281",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "fb8cb1c8",
+      "fileHash": "3c2dae7e",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "ac12a4ec",
-      "needsInterop": false
-    },
-    "@mdit-vue/shared": {
-      "src": "../../../../node_modules/@mdit-vue/shared/dist/index.mjs",
-      "file": "@mdit-vue_shared.js",
-      "fileHash": "fc7d1c6d",
-      "needsInterop": false
-    },
-    "valine": {
-      "src": "../../../../node_modules/valine/dist/Valine.min.js",
-      "file": "valine.js",
-      "fileHash": "2a42fd04",
-      "needsInterop": true
-    },
-    "@giscus/vue": {
-      "src": "../../../../node_modules/@giscus/vue/dist/index.js",
-      "file": "@giscus_vue.js",
-      "fileHash": "973d7229",
+      "fileHash": "6b91718d",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "d4527d23",
+      "fileHash": "31609849",
       "needsInterop": false
+    },
+    "@mdit-vue/shared": {
+      "src": "../../../../node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "0c22b683",
+      "needsInterop": false
+    },
+    "valine": {
+      "src": "../../../../node_modules/valine/dist/Valine.min.js",
+      "file": "valine.js",
+      "fileHash": "f7da69b5",
+      "needsInterop": true
     }
   },
   "chunks": {
     "chunk-RY5ODQAQ": {
       "file": "chunk-RY5ODQAQ.js"
-    },
-    "giscus-BNK3dBIH-2QA577VX": {
-      "file": "giscus-BNK3dBIH-2QA577VX.js"
     },
     "chunk-Y2F7D3TJ": {
       "file": "chunk-Y2F7D3TJ.js"

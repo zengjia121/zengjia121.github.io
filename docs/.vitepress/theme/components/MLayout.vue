@@ -60,27 +60,6 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-after>
       <NavVisitor />
     </template>
-
-    <template
-      v-if="comment && frontmatter.comment !== false"
-      #doc-footer-before
-    >
-      <div class="doc-comments">
-        <Giscus
-          id="comments"
-          mapping="specific"
-          :term="pageId"
-          strict="1"
-          reactionsEnabled="1"
-          emitMetadata="0"
-          inputPosition="top"
-          :theme="isDark ? 'dark' : 'light'"
-          lang="zh-CN"
-          loading="lazy"
-          v-bind="{ ...comment }"
-        />
-      </div>
-    </template>
     <template #doc-footer-before>
       <ContentFooter />
     </template>
@@ -103,7 +82,3 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   padding-top: 24px;
 }
 </style>
-
-function inject(arg0: string) {
-  throw new Error('Function not implemented.')
-}

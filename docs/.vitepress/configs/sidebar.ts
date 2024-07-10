@@ -17,9 +17,11 @@ const preferredOrder = [
   "Git",
   "KG",
   "Blog",
+  "AI系列",
   "echarts",
   "算法",
   "设计模式",
+  "动态规划",
   "Leetcode",
   "其他",
 ]; // 你的优先顺序

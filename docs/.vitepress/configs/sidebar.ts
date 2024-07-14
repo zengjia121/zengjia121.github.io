@@ -16,6 +16,7 @@ const preferredOrder = [
   "Vue",
   "Git",
   "KG",
+  "WebGis",
   "Blog",
   "AI系列",
   "echarts",

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress"
 import DefaultTheme from "vitepress/theme"
-import { nextTick, provide, inject, watch } from "vue"
+import { nextTick, provide, ref, watch, onMounted } from "vue"
 // import Giscus from "@giscus/vue"
 
 import { usePageId } from "../composables"
@@ -60,13 +60,13 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-bar-title-after>
       <NavVisitor />
     </template>
+    <template #doc-top>
+      <cloud-music />
+    </template>
     <template #doc-footer-before>
       <ContentFooter />
     </template>
     <template #doc-after> <FooterComment /></template>
-    <template #sidebar-nav-after>
-      <cloudMusic />
-    </template>
   </Layout>
 </template>
 

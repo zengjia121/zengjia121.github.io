@@ -1,50 +1,50 @@
 {
-  "hash": "04b17fb7",
+  "hash": "670d4aac",
   "configHash": "f8d5484b",
-  "lockfileHash": "dc390f6c",
-  "browserHash": "a0470040",
+  "lockfileHash": "d4b626d7",
+  "browserHash": "6cbe317d",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "bbdaff1a",
+      "fileHash": "07655d28",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "d292c6af",
+      "fileHash": "f6bbe86e",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "0290caa3",
+      "fileHash": "5818531f",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "8f46d121",
+      "fileHash": "70c121db",
       "needsInterop": false
+    },
+    "aplayer": {
+      "src": "../../../../node_modules/aplayer/dist/APlayer.min.js",
+      "file": "aplayer.js",
+      "fileHash": "e166564b",
+      "needsInterop": true
     },
     "@mdit-vue/shared": {
       "src": "../../../../node_modules/@mdit-vue/shared/dist/index.mjs",
       "file": "@mdit-vue_shared.js",
-      "fileHash": "a4d5713e",
+      "fileHash": "e9ecf27e",
       "needsInterop": false
     },
     "valine": {
       "src": "../../../../node_modules/valine/dist/Valine.min.js",
       "file": "valine.js",
-      "fileHash": "6a3ed8c1",
+      "fileHash": "31b8ec89",
       "needsInterop": true
-    },
-    "vue-router": {
-      "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
-      "file": "vue-router.js",
-      "fileHash": "54cfa875",
-      "needsInterop": false
     }
   },
   "chunks": {

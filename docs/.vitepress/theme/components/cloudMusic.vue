@@ -1,36 +1,29 @@
 <template>
-  <div class="cloudmiusc">
-    <!-- 网易云音乐嵌入代码 -->
-    <iframe
-      frameborder="no"
-      border="0"
-      marginwidth="0"
-      marginheight="0"
-      width="280"
-      height="210"
-      src="//music.163.com/outchain/player?type=0&id=9597294859&auto=1&height=430"
-    ></iframe>
-
-    <!-- 其他内容 -->
-  </div>
+  <!-- <div class="cloudmiusc" id="aplayer"></div> -->
+  <meting-js
+    class="cloudmiusc"
+    server="netease"
+    type="playlist"
+    id="8751986160"
+    fixed="true"
+    volume="0.5"
+  ></meting-js>
 </template>
 <script setup lang='ts'>
-// import { ref, reactive, computed } from "vue"
-// const musicList = [2142857204, 2142858141, 2147608127, 2152374307, 2051267438]
-// const randomMusicId = computed(() => {
-//   const index = Math.floor(Math.random() * musicList.length)
-//   return musicList[index]
+import { onBeforeMount, onMounted } from "vue"
+// import APlayer from "aplayer"
+// onMounted(() => {
+//   const ap = new APlayer({
+//     container: document.getElementById("aplayer"),
+//     volume: 0.5,
+//   })
 // })
 </script>
-
 
 <style lang='scss' scoped>
 .cloudmiusc {
   margin-top: 5px;
   margin-left: -30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>
 <!-- https://music.163.com/song?id=2142857204&userid=117253482

@@ -14,7 +14,6 @@ import NavVisitor from "./components/NavVisitor.vue";
 import MDocFooter from "./components/MDocFooter.vue";
 import FooterComment from "./components/FooterComment.vue";
 import "./styles/index.scss";
-
 let homePageStyle: HTMLStyleElement | undefined;
 
 export default {

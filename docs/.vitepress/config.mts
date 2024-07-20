@@ -1,6 +1,7 @@
 /** @format */
 
 import { defineConfig } from "vitepress";
+import metingPlugin from "vuepress-plugin-meting2";
 import { head, nav, sidebar } from "./configs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({

@@ -8,7 +8,6 @@
     :id="props.id"
     fixed="true"
     volume="0.4"
-    lrc-type="0"
   ></meting-js>
 </template>
 <script setup lang='ts'>

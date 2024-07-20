@@ -13,12 +13,10 @@ import FooterComment from "./FooterComment.vue"
 const { Layout } = DefaultTheme
 const { isDark, theme, frontmatter } = useData()
 const pageId = usePageId()
-const { comment } = theme.value
-
+const { music } = theme.value
 const enableTransitions = () =>
   "startViewTransition" in document &&
   window.matchMedia("(prefers-reduced-motion: no-preference)").matches
-
 provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
     isDark.value = !isDark.value
@@ -61,7 +59,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
       <NavVisitor />
     </template>
     <template #doc-top>
-      <cloud-music />
+      <cloud-music :type="music.type" :id="music.id" />
     </template>
     <template #doc-footer-before>
       <ContentFooter />

@@ -64,5 +64,9 @@ export default defineConfig({
         placeholder: "请输入关键词",
       },
     },
+    music: {
+      type: "playlist",
+      id: "8751986160",
+    },
   },
 });

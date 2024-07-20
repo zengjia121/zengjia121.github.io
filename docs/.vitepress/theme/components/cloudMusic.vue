@@ -3,14 +3,17 @@
   <meting-js
     class="cloudmiusc"
     server="netease"
-    type="playlist"
-    id="8751986160"
+    :type="props.type"
+    autoplay="true"
+    :id="props.id"
     fixed="true"
-    volume="0.5"
+    volume="0.4"
+    lrc-type="0"
   ></meting-js>
 </template>
 <script setup lang='ts'>
-import { onBeforeMount, onMounted } from "vue"
+import { onBeforeMount, onMounted, defineProps } from "vue"
+const props = defineProps(["type", "id"])
 // import APlayer from "aplayer"
 // onMounted(() => {
 //   const ap = new APlayer({

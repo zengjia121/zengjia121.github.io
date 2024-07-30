@@ -23,6 +23,7 @@ const preferredOrder = [
   "算法",
   "设计模式",
   "动态规划",
+  "回溯",
   "Leetcode",
   "其他",
 ]; // 你的优先顺序

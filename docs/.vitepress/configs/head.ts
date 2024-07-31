@@ -16,7 +16,7 @@ export const head: HeadConfig[] = [
   // 添加 APlayer 的脚本
   ["script", { src: "https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" }],
   // 添加 Tianli GPT 的本地样式表
-  ["link", { rel: "stylesheet", href: "/tianli_gpt.css" }],
+  ["link", { rel: "stylesheet", href: "/tianli_gpt/tianli_gpt.min.css" }],
   // 添加 Tianli GPT 的脚本和配置
   [
     "script",
@@ -26,5 +26,5 @@ export const head: HeadConfig[] = [
     let tianliGPT_key = 'dlxecybj9Tx';
   `,
   ],
-  ["script", { src: "/tianli_gpt.js" }],
+  ["script", { src: "/tianli_gpt/tianli_gpt.min.js" }],
 ];

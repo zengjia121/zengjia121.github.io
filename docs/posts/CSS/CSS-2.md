@@ -33,6 +33,7 @@ date: 2024-04-01 21:02:00
     - [flex-shrink](#flex-shrink)
     - [flex-basis](#flex-basis)
     - [flex](#flex)
+    - [align-self](#align-self)
 
 <!--more-->
 
@@ -259,11 +260,11 @@ date: 2024-04-01 21:02:00
 
 `flex`属性是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为`0 1 auto`
 
-````CSS
+```CSS
 .item {
   flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }
-``` 你
+```
 
 注：flex: 1 的项目初始大小为 0，而 flex: auto 的项目初始大小为它的默认大小
 
@@ -281,6 +282,6 @@ date: 2024-04-01 21:02:00
 .item {
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
-````
+```
 
 ![align-self](../images/blog-2024-04-01-21-38-52.png)

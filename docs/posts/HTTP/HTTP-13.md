@@ -61,7 +61,7 @@ date: 2024-9-11 17:06:57
 
 - 功能：数据的表示、加密和解密、压缩和解压缩，确保数据格式的兼容性。
 
-- 协议和设备：SSL/TLS、JPEG、MPEG、ASCII、EBCDIC 等。
+- 协议和设备：`SSL/TLS`、`JPEG`、`MPEG`、`ASCII`、`EBCDIC` 等。
 
 ### 应用层（Application Layer）
 
@@ -69,7 +69,7 @@ date: 2024-9-11 17:06:57
 
 - 功能：提供网络服务和应用程序接口，直接面向用户。
 
-- 协议与设备：HTTP、DNS、FTP、SMTP、Telnet、SNMP 等。
+- 协议与设备：`HTTP`、`DNS`、`FTP`、`SMTP`、`Telnet`、`SNMP` 等。
 
 ## 模型数据总结
 

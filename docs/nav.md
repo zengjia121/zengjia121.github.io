@@ -6,7 +6,7 @@ layoutClass: "m-home-layout"
 features:
   - icon: 📖
     title: 前端知识
-    link: /posts/ES6/ES6-1.html
+    link: /front/ES6/ES6-1.html
     linkText: 前端知识
   - icon: 💻
     title: 算法基础

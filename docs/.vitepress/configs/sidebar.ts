@@ -4,32 +4,17 @@ import { DefaultTheme } from "vitepress";
 import { generateSidebar } from "../Plugin/generateSidebar";
 import path from "path";
 
-const postDir = path.resolve(__dirname, "../../posts");
+const frontDir = path.resolve(__dirname, "../../front");
 const algorithmDir = path.resolve(__dirname, "../../algorithm");
 const projectDir = path.resolve(__dirname, "../../project");
-const preferredOrder = [
-  "ES6",
-  "HTTP",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "Vue",
-  "Git",
-  "KG",
-  "WebGis",
-  "Blog",
-  "AI系列",
-  "echarts",
-  "算法",
-  "设计模式",
-  "动态规划",
-  "回溯",
-  "Leetcode",
-  "其他",
-]; // 你的优先顺序
-
+const knowledgeDir = path.resolve(__dirname, "../../knowledge");
+const frontOrder = ["ES6", "HTTP", "CSS", "JavaScript", "TypeScript", "Vue", "Git"];
+const algorithmOrder = ["算法", "设计模式", "动态规划", "回溯", "Leetcode", "真题训练"];
+const projectOrder = ["KG", "WebGis", "Blog", "AI系列", "echarts", "其他"];
+const knowledgeOrder = ["操作系统"];
 export const sidebar: DefaultTheme.Config["sidebar"] = {
-  "/posts/": generateSidebar(postDir, preferredOrder),
-  "/algorithm/": generateSidebar(algorithmDir, preferredOrder),
-  "/project/": generateSidebar(projectDir, preferredOrder),
+  "/front/": generateSidebar(frontDir, frontOrder),
+  "/algorithm/": generateSidebar(algorithmDir, algorithmOrder),
+  "/project/": generateSidebar(projectDir, projectOrder),
+  "/knowledge/": generateSidebar(knowledgeDir, knowledgeOrder),
 };

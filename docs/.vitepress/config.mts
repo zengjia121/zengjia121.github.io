@@ -66,7 +66,7 @@ export default defineConfig({
     },
     music: {
       type: "playlist",
-      id: "8751986160",
+      id: "9808220514",
     },
   },
 });

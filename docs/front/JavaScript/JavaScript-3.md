@@ -22,6 +22,7 @@ date: 2024-04-10 21:47:37
   - [prototype 和 proto](#prototype-和-proto)
   - [原型链](#原型链-1)
   - [一些题目](#一些题目)
+  - [总结](#总结)
 
 <!--more-->
 
@@ -175,3 +176,7 @@ JS 的原型查找机制，把原来定义在实例上的方法，放到原型�
   console.log(b.n, b.m); //1 undefined  这里拿到是改变prototype之前的
   console.log(c.n, c.m); //2 3		这里拿到是改变prototype之后的
   ```
+
+## 总结
+
+常看常新

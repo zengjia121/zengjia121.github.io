@@ -44,7 +44,12 @@ export default {
     const currentUrl = ref(null);
     if (typeof window !== "undefined") {
       router.onBeforeRouteChange = (to) => {
+        // console.log("路由将改变为: ", to);
         currentUrl.value = window.location.origin + "/" + to.split("/").slice(-3).join("/");
+        if (typeof window._hmt !== "undefined") {
+          // console.log("百度统计: ", window._hmt);
+          window._hmt.push(["_trackPageview", to]);
+        }
       };
       app.provide("currentUrl", currentUrl);
       watch(
@@ -89,4 +94,8 @@ function updateHomePageStyle(value: boolean) {
     homePageStyle.remove();
     homePageStyle = undefined;
   }
+}
+// globals.d.ts
+interface Window {
+  _hmt: any;
 }

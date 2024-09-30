@@ -27,4 +27,17 @@ export const head: HeadConfig[] = [
   `,
   ],
   ["script", { src: "/tianli_gpt/tianli_gpt.min.js" }],
+  [
+    "script",
+    {},
+    `
+    window._hmt = window._hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e91c308ef31aef799174efc545eaac24";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  `,
+  ],
 ];

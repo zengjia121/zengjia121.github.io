@@ -1,5 +1,5 @@
 ---
-title: WebGis 平台搭建(九):WebSocket的实现
+title: WebGis平台搭建(九):WebSocket的实现
 tags:
   - 前端
   - WebGis

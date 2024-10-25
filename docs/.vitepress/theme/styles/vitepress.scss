@@ -79,7 +79,9 @@ table {
 .vp-doc a > code:hover {
   color: var(--vp-c-brand-2);
 }
-
+.vp-doc strong {
+  color: var(--vp-code-color);
+}
 /* Transition by color instead of opacity */
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;

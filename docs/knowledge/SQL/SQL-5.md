@@ -107,3 +107,11 @@ date: 2024-10-23 21:48:33
     - `Next-Key Lock` 可以防止其他事务在当前事务读取的记录之间插入新的记录，从而避免幻读。
 
   **`MySQL`可重复读隔离级别并没有彻底解决幻读，只是很大程度上避免了幻读现象的发生。**
+
+## 参考
+
+:::tip 参考文献
+
+https://xiaolincoding.com/mysql/transaction/mvcc.html
+
+:::

@@ -6,3 +6,4 @@ node_modules
 .py
 .vitepress/dist
 # dist
+docs/about-me.md

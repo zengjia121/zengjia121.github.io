@@ -58,8 +58,8 @@ export default defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: "27XTJSINHO",
-        apiKey: "3a0677c4909fe44f1843f338aabddac7",
+        appId: "O4MWI2CZR5",
+        apiKey: "4af3805e9827aa84ced838fc49ee760b",
         indexName: "ZJBlog",
         placeholder: "请输入关键词",
       },

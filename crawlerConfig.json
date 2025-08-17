@@ -1,6 +1,6 @@
 {
   "index_name": "ZJBlog",
-  "start_urls": ["https://zzzj.blog/"],
+  "start_urls": ["https://zzzj.life/"],
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
